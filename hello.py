@@ -108,7 +108,7 @@ def check_temperature():
 
 def auto():
     onTime = 0
-    sleepSeconds = 6
+    sleepSeconds = 300
     resetInterval = 6 * 3600
     maxRelay = 15
 
