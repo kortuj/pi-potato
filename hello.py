@@ -153,7 +153,7 @@ def auto():
 def main(argv):
 
     try:
-        opts, args = getopt.getopt(argv,"ap:sx",["ifile=","ofile="])
+        opts, args = getopt.getopt(argv,"ap:sux",["ifile=","ofile="])
     except getopt.GetoptError:
         print('invalid arguments')
         forceExit()
@@ -163,7 +163,8 @@ def main(argv):
         if opt in ("-a", "--auto"):
             auto()
         elif opt in ("-p", "--pumptest"):
-            startPump(arg, 60)
+            idx,upseconds = arg.split(",")
+            startPump(idx, upseconds)
         elif opt in ("-s", "--sensortest"):
             sensorTest(upseconds = 0.1)
         elif opt in ("-x", "--off"):
