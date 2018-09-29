@@ -114,7 +114,7 @@ def auto():
 
     relay = [0, 0, 0, 0]
     pTime = [0, 0, 0, 0]
-    upTime = [3, 3, 3, 3]
+    upTime = [15, 15, 15, 15]
 
     while onTime < 3600: # =1hour
         check_temperature()
