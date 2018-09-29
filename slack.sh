@@ -5,4 +5,4 @@ if [[ -z "$SLACK_RAJCATA" ]]; then
 fi
 
 payload="{'text': '$1', 'channel': '#rajcata'}"
-curl -s -X POST --data-urlencode payload="$payload" "$SLACK_RAJCATA" &> /dev/null
+curl -s -X POST --data-urlencode payload="$payload" "$SLACK_RAJCATA" &> /dev/null &
