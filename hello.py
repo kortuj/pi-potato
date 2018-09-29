@@ -108,13 +108,13 @@ def check_temperature():
 
 def auto():
     onTime = 0
-    sleepSeconds = 600
+    sleepSeconds = 6
     resetInterval = 6 * 3600
     maxRelay = 15
 
     relay = [0, 0, 0, 0]
     pTime = [0, 0, 0, 0]
-    upTime = [60, 20, 25, 25]
+    upTime = [3, 3, 3, 3]
 
     while onTime < 3600: # =1hour
         check_temperature()
