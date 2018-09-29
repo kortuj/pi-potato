@@ -1,2 +1,2 @@
 #!/bin/bash -e
-./hello.py -x
+./hello.py -s
