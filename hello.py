@@ -164,7 +164,7 @@ def main(argv):
             auto()
         elif opt in ("-p", "--pumptest"):
             idx,upseconds = arg.split(",")
-            startPump(idx, upseconds)
+            startPump(int(idx), float(upseconds))
         elif opt in ("-s", "--sensortest"):
             sensorTest(upseconds = 0.1)
         elif opt in ("-x", "--off"):
