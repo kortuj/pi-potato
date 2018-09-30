@@ -9,7 +9,7 @@ import os
 import time
 from time import sleep # Import the sleep function from the time module
 
-slackHook = "https://hooks.slack.com/services/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"
+slackHook = "https://hooks.slack.com/services/..."
 
 def nowStr():
     return datetime.datetime.now().strftime("[%Y-%m-%d %H:%M:%S] ")
@@ -108,13 +108,13 @@ def check_temperature():
 
 def auto():
     onTime = 0
-    sleepSeconds = 300
+    sleepSeconds = 600
     resetInterval = 6 * 3600
     maxRelay = 15
 
     relay = [0, 0, 0, 0]
     pTime = [0, 0, 0, 0]
-    upTime = [15, 15, 15, 15]
+    upTime = [30, 15, 15, 15]
 
     while onTime < 3600: # =1hour
         check_temperature()
