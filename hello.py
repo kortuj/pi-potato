@@ -110,7 +110,7 @@ def auto():
     onTime = 0
     sleepSeconds = 300
     resetInterval = 6 * 3600
-    maxRelay = 15
+    maxRelay = 10
 
     relay = [0, 0, 0, 0]
     pTime = [0, 0, 0, 0]
@@ -123,9 +123,6 @@ def auto():
 
         for i in range(0, 4):
             h = int(nowH())
-            if (4 >= h) or (h >= 23):
-                log("Quiet period")
-                break;
 
             if isDry(i):
                 relay[i] += 1
